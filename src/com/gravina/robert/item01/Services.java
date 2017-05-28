@@ -7,6 +7,7 @@ class Services {
     private static final Map<String, Provider> providers = new HashMap<>();
     private static final String DEFAULT_PROVIDER_NAME = "<def>";
 
+    // 1. register providers
     public static void registerProvider(String name, Provider provider) {
         providers.put(name, provider);
     }
@@ -16,6 +17,7 @@ class Services {
 
     }
 
+    // 2. get service objects via providers
     public static Service newInstance(String name) {
         return providers.get(name).newService();
     }

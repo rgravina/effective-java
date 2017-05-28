@@ -23,6 +23,7 @@ class Color {
             return this;
         }
 
+        // builds the Color instance from the values provided to the builder
         Color build() {
             return new Color(this);
         }

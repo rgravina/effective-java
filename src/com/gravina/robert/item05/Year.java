@@ -22,7 +22,7 @@ public class Year {
     }
 
     public boolean beforeY2K() {
-        java.util.Date date = Date.from(LocalDateTime.of(this.year, 1, 1, 0, 0).toInstant(ZoneOffset.UTC));
+        Date date = Date.from(LocalDateTime.of(this.year, 1, 1, 0, 0).toInstant(ZoneOffset.UTC));
         return y2k.after(date);
     }
 }
