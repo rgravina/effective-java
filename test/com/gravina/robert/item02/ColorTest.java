@@ -13,7 +13,11 @@ class ColorTest {
 
     @Test
     void canBeBuiltAndReturnBlack() {
-        Color color = new Color.Builder().red(0).green(0).blue(0).build();
+        Color color = new Color.Builder()
+                .red(0)
+                .green(0)
+                .blue(0)
+                .build();
         assertSame(color.toHex(), "000000");
     }
 }

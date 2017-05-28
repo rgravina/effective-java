@@ -5,16 +5,6 @@ class Color {
     private final int green;
     private final int blue;
 
-    Color(Builder builder) {
-        this.red = builder.red;
-        this.green = builder.green;
-        this.blue = builder.blue;
-    }
-
-    String toHex() {
-        return "000000";
-    }
-
     static class Builder {
         private int red;
         private int green;
@@ -36,5 +26,15 @@ class Color {
         Color build() {
             return new Color(this);
         }
+    }
+
+    private Color(Builder builder) {
+        this.red = builder.red;
+        this.green = builder.green;
+        this.blue = builder.blue;
+    }
+
+    String toHex() {
+        return "000000";
     }
 }
