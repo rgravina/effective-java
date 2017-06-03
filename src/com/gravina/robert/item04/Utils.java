@@ -1,6 +1,6 @@
 package com.gravina.robert.item04;
 
-public class Utils {
+class Utils {
     // can not be instantiated
     private Utils() {}
 

@@ -11,7 +11,7 @@ public class ZooCloser {
         this.zoo = zoo;
     }
 
-    public void close() {
+    void close() {
         try {
             while (true) {
                 zoo.free();

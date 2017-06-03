@@ -11,23 +11,23 @@ public class CloseableZoo {
         this.zoo = zoo;
     }
 
-    public void capture(Animal animal) {
+    void capture(Animal animal) {
         zoo.capture(animal);
     }
 
-    public void free() {
+    void free() {
         zoo.free();
     }
 
-    public int getSize() {
+    int getSize() {
         return zoo.getSize();
     }
 
-    public void close() {
+    void close() {
         this.closed = true;
     }
 
-    public boolean isClosed() {
+    boolean isClosed() {
         return closed;
     }
 }
