@@ -29,10 +29,7 @@ class ZooTest {
     void throwsExceptionWhenAddingToFullZoo() {
         Zoo zoo = new Zoo();
         Animal giraffe = new Animal("giraffe");
-        Animal[] animals = {giraffe, giraffe, giraffe, giraffe,
-                giraffe, giraffe, giraffe, giraffe,
-                giraffe, giraffe, giraffe, giraffe,
-                giraffe, giraffe, giraffe, giraffe};
+        Animal[] animals = {giraffe, giraffe, giraffe, giraffe};
         for (Animal animal : animals) {
             zoo.capture(animal);
         }
