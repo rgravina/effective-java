@@ -14,10 +14,12 @@ class Color {
             red = dec;
             return this;
         }
+
         Builder green(int dec) {
             green = dec;
             return this;
         }
+
         Builder blue(int dec) {
             blue = dec;
             return this;
@@ -36,6 +38,16 @@ class Color {
     }
 
     String toHex() {
-        return "000000";
+        StringBuilder builder = new StringBuilder();
+        int[] components = {this.red, this.green, this.blue};
+        for (int component : components) {
+            String hex = Integer.toHexString(component);
+            builder.append(hex);
+            if (hex.length() == 1) {
+                builder.append(0);
+            }
+
+        }
+        return builder.toString();
     }
 }

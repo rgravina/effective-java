@@ -8,16 +8,16 @@ class ColorTest {
     @Test
     void defaultsToBlack() {
         Color color = new Color.Builder().build();
-        assertSame(color.toHex(), "000000");
+        assertEquals("000000", color.toHex());
     }
 
     @Test
-    void canBeBuiltAndReturnBlack() {
+    void canBeBuiltAndReturnColorInHex() {
         Color color = new Color.Builder()
-                .red(0)
-                .green(0)
-                .blue(0)
+                .red(231)
+                .green(255)
+                .blue(37)
                 .build();
-        assertSame(color.toHex(), "000000");
+        assertEquals("e7ff25", color.toHex());
     }
 }
