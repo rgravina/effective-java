@@ -1,25 +1,25 @@
 package com.gravina.robert.item15;
 
-public class Counter {
+class Counter {
     private final int count;
 
-    public Counter() {
-        count = 0;
-    }
-
-    public Counter(int count) {
+    private Counter(int count) {
         this.count = count;
     }
 
-    public int getCount() {
+    static Counter valueOf(int count) {
+        return new Counter(count);
+    }
+
+    int getCount() {
         return count;
     }
 
-    public Counter increment() {
+    Counter increment() {
         return new Counter(count + 1);
     }
 
-    public Counter decrement() {
+    Counter decrement() {
         return new Counter(count - 1);
     }
 
