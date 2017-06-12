@@ -17,3 +17,4 @@ If you'd like to run the tests and look at the code, they should run as is in In
 - Item 07: A `ZooCloser` class which frees all the animals in the `Zoo` from Item 06 then closes it. It introduces a `CloseableZoo` which wraps it and has a boolean for tracking closed state. It relies on the `EmptyStackException` thrown when freeing the last animal to decide when the zoo is free (imagine there was no `getSize` method, as it would be better to check when this is zero).
 - Item 15: An immutable `Counter`.
 - Item 16: An `InstrumentedZoo` class which counts calls to capture and free.
+- Item 26: A `GenericZoo` which can capture and free any type.
