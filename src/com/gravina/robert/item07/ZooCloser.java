@@ -1,7 +1,5 @@
 package com.gravina.robert.item07;
 
-import com.gravina.robert.item06.Zoo;
-
 import java.util.EmptyStackException;
 
 public class ZooCloser {
